@@ -124,7 +124,9 @@ export default {
         }
         const getSpots = async ()=>{
             let response = await this.axios.get('http://localhost:3000/spots');
-            return response.data;
+            return response.data.filter(spot=>{
+                return spot.cancel === false;
+            });
         }
 
 
