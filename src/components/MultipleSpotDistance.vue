@@ -63,7 +63,9 @@ export default {
         };
     },
     computed: {
-
+        eteed(){
+            return 1;
+            },
     },
     methods: {
         // 平均公交耗时
